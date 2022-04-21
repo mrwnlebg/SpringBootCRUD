@@ -39,9 +39,8 @@ public class TopicService {
     public void deleteSpecificTopic(Integer id) {
         for (int index = 0; index < topics.size(); index++) {
             Topic t = topics.get(index);
-            if (t.getId().equals(id)) {
+            if (t.getId().equals(id))
                 topics.remove(index);
-            }
         }
     }
 }
